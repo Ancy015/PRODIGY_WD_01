@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etech. - Develop Your Skills in a New & Unique Way</title>
+    <meta name="description"
+        content="Etech is a transformative online learning platform to enhance your skills with expert-led courses.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="mobile-nav-menu" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="#" class="logo">Etech<span>.</span></a>
+            <i class="fa-solid fa-xmark close-menu" id="close-menu"></i>
+        </div>
+        <ul class="mobile-links">
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-actions">
+            <a href="#" class="btn btn-text">Sign In</a>
+            <a href="#" class="btn btn-primary">Free Trial</a>
+        </div>
+    </div>
+    <div class="mobile-overlay" id="overlay"></div>
+
+    <header class="header">
+        <nav class="container nav">
+            <a href="#" class="logo">Etech<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#courses">Courses <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#teachers">Teachers <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#offers">Offers <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-text">Sign In</a>
+                <a href="#" class="btn btn-primary">Free Trial</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>Develop your skills in a new and unique way</h1>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                    <a href="#" class="btn btn-link"><i class="fa-solid fa-circle-play"></i> What's Etech?</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544717305-27a7ad22756d?auto=format&fit=crop&w=800&q=80"
+                        alt="">
+                    <div class="badge badge-courses">
+                        <i class="fa-solid fa-book"></i>
+                        <div>
+                            <span>50+</span>
+                            <small>Online Courses</small>
+                        </div>
+                    </div>
+                    <div class="badge badge-students">
+                        <div class="student-avatars">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+                                alt="Student">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80"
+                                alt="Student">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                                alt="Student">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt="Student">
+                        </div>
+                        <div>
+                            <span>10k+</span>
+                            <small>Online Students</small>
+                        </div>
+                    </div>
+                    <div class="badge badge-course-float">
+                        <div class="float-card-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
+                                alt="Instructor">
+                            <div>
+                                <span>UI Design Course</span>
+                                <small>Join Now</small>
+                            </div>
+                        </div>
+                        <button class="join-btn">Enroll</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container partner-logos">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/duolingo.svg" alt="Duolingo"
+                    class="partner-svg">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/magicleap.svg" alt="Magic Leap"
+                    class="partner-svg">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoft.svg" alt="Microsoft"
+                    class="partner-svg">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codecov.svg" alt="Codecov"
+                    class="partner-svg">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/usertesting.svg" alt="UserTesting"
+                    class="partner-svg">
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section container">
+            <div class="section-title">
+                <h2>Search Courses</h2>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for over 50+ courses">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits container">
+            <div class="benefits-grid">
+                <div class="benefits-images-grid">
+                    <div class="img-circle circle-pink"><img src="https://i.pravatar.cc/300?u=15" alt="Benefit 1"></div>
+                    <div class="img-circle circle-blue"><img src="https://i.pravatar.cc/300?u=16" alt="Benefit 2"></div>
+                    <div class="img-circle circle-yellow"><img src="https://i.pravatar.cc/300?u=17" alt="Benefit 3">
+                    </div>
+                    <div class="img-circle circle-purple"><img src="https://i.pravatar.cc/300?u=18" alt="Benefit 4">
+                    </div>
+                </div>
+                <div class="benefits-content">
+                    <h2 class="subtitle"><span>Benefits</span> From Our Online Learning</h2>
+                    <ul class="benefits-list">
+                        <li>
+                            <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <h3>Online Degrees</h3>
+                                <p>Earn accredited degrees from the comfort of your home, opening doors to a world of
+                                    possibilities.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box"><i class="fa-solid fa-book-open"></i></div>
+                            <div>
+                                <h3>Short Courses</h3>
+                                <p>Enhance your skills with our concise and focused short courses, designed for quick
+                                    and effective learning.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
+                            <div>
+                                <h3>Training From Experts</h3>
+                                <p>Immerse yourself in knowledge with industry experts guiding you through hands-on
+                                    experience.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box"><i class="fa-solid fa-circle-play"></i></div>
+                            <div>
+                                <h3>1.5k+ Video Courses</h3>
+                                <p>Dive into a vast library of over 1.5k video courses covering many subjects, offering
+                                    a visual learning experience.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses container" id="courses">
+            <div class="section-header">
+                <h2 class="subtitle">Our Popular Courses</h2>
+                <p>Discover our most sought-after courses, carefully curated to meet the demands of today's learners.
+                    Dive into engaging content crafted for success in every step of your educational journey.</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80"
+                            alt="Web Design">
+                        <span class="course-tag">Web Design</span>
+                        <span class="course-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="course-body">
+                        <h3>Web Design & Development</h3>
+                        <div class="course-info">
+                            <span><i class="fa-solid fa-book"></i> 25 Classes</span>
+                            <span><i class="fa-solid fa-users"></i> 185 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$560.00</span>
+                            <div class="instructor">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                                    alt="Instructor">
+                                <span>J. Morgan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80"
+                            alt="UI/UX Design">
+                        <span class="course-tag">UI/UX Design</span>
+                        <span class="course-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="course-body">
+                        <h3>Wireframing & Prototyping</h3>
+                        <div class="course-info">
+                            <span><i class="fa-solid fa-book"></i> 8 Classes</span>
+                            <span><i class="fa-solid fa-users"></i> 400 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$160.00</span>
+                            <div class="instructor">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                                    alt="Instructor">
+                                <span>Jordan Re</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=800&q=80"
+                            alt="Data Science">
+                        <span class="course-tag">Data Science</span>
+                        <span class="course-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="course-body">
+                        <h3>Python For Data Science</h3>
+                        <div class="course-info">
+                            <span><i class="fa-solid fa-book"></i> 10 Classes</span>
+                            <span><i class="fa-solid fa-users"></i> 150 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$432.00</span>
+                            <div class="instructor">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80"
+                                    alt="Instructor">
+                                <span>Alex Taylor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Become Instructor Section -->
+        <section class="instructor-section container">
+            <div class="instructor-grid">
+                <div class="instructor-content">
+                    <h2>If You Are A Certified Teacher Then <span>Become An Instructor</span></h2>
+                    <p>Unlock the opportunity to inspire and educate by joining our team of instructors. If you're a
+                        certified teacher, elevate your impact and share your expertise with learners worldwide.</p>
+                    <h3>Enjoy Many Perks</h3>
+                    <div class="perks-grid">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Global Impact</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Flexible Schedule</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Innovative Teaching Tools</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Recognition and Reputation</li>
+                        </ul>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Creative Freedom</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Monetize Your Expertise</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Professional Development</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Networking Opportunities</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">Become an Instructor</a>
+                </div>
+                <div class="instructor-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                        alt="Instructor" style="border-radius: 30px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials container">
+            <div class="section-header">
+                <h2 class="subtitle">Student's Testimonials</h2>
+                <p>Here's what our students have to say about their transformative learning experience. Real stories,
+                    real growth. Discover firsthand the impact our courses have had on their lives.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <img src="https://i.pravatar.cc/50?u=10" alt="Student">
+                        <div>
+                            <h4>Alana Rodriguez</h4>
+                            <small>Web Developer</small>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>Enrolling in courses at this elearning platform was a game-changer for me. Absolutely
+                        transformative experience!</p>
+                </div>
+                <div class="testimonial-card active">
+                    <div class="student-info">
+                        <img src="https://i.pravatar.cc/50?u=11" alt="Student">
+                        <div>
+                            <h4>Emily Chen</h4>
+                            <small>UI Designer</small>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>Exceptional courses! The practical insights and flexible learning structure have been
+                        instrumental in my professional growth.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="student-info">
+                        <img src="https://i.pravatar.cc/50?u=12" alt="Student">
+                        <div>
+                            <h4>James Johnson</h4>
+                            <small>Data Analyst</small>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>Highly recommend! The personalized feedback and real-world application in the courses have
+                        elevated my understanding.</p>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span><span>2</span>/15</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">Etech<span>.</span></a>
+                    <p>Empowering learners worldwide through quality education and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Instructors</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get latest updates.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Email Address">
+                        <button class="btn btn-primary">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Etech Online Learning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
