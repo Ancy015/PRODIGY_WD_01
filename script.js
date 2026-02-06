@@ -1,24 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
-    const mobileNav = document.getElementById('mobile-nav');
-    const closeMenu = document.getElementById('close-menu');
-    const overlay = document.getElementById('overlay');
-    const mobileLinks = document.querySelectorAll('.mobile-links a');
+    const navLinks = document.querySelector('.nav-links');
 
-    const toggleMenu = () => {
-        mobileNav.classList.toggle('active');
-        overlay.classList.toggle('active');
-        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
-    };
-
-    if (mobileMenu) mobileMenu.addEventListener('click', toggleMenu);
-    if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
-    if (overlay) overlay.addEventListener('click', toggleMenu);
-
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', toggleMenu);
-    });
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.querySelector('i').classList.toggle('fa-bars');
+            mobileMenu.querySelector('i').classList.toggle('fa-xmark');
+        });
+    }
 
     // Sticky Header Effect
     const header = document.querySelector('.header');
