@@ -150,6 +150,11 @@ img {
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: var(--text-main);
+}
+
+.mobile-only {
+    display: none;
 }
 
 /* Hero Section */
@@ -311,7 +316,12 @@ img {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    opacity: 0.7;
+    opacity: 0.8;
+}
+
+.partner-svg,
+.partner-logo {
+    flex: 0 0 auto;
 }
 
 .partner-svg {
@@ -845,6 +855,17 @@ img {
         pointer-events: all;
     }
 
+    .mobile-only {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-only .btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
     .nav-actions {
         display: none;
     }
@@ -853,20 +874,27 @@ img {
         display: block;
     }
 
+    .logo {
+        font-size: 24px;
+    }
+
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        padding-top: 40px;
-        gap: 80px;
+        padding: 40px 15px;
+        gap: 60px;
     }
 
     .hero-content h1 {
-        font-size: 38px;
+        font-size: 36px;
+        margin-bottom: 20px;
     }
 
     .hero-btns {
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
+        /* Keep buttons side-by-side if they fit */
+        flex-wrap: wrap;
         gap: 15px;
     }
 
@@ -905,9 +933,13 @@ img {
 
     .benefits-images-grid {
         order: 2;
-        max-width: 350px;
+        max-width: 320px;
         margin: 0 auto;
-        gap: 15px;
+        gap: 20px;
+    }
+
+    .img-circle {
+        padding: 10px;
     }
 
     .instructor-image {
@@ -917,12 +949,25 @@ img {
     }
 
     .benefits-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        /* Keep 2 columns like desktop */
+        gap: 20px;
+    }
+
+    .benefits-list li {
+        text-align: center;
+        align-items: center;
     }
 
     .courses-grid {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        padding: 0;
+    }
+
+    .course-card {
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .footer-grid {
@@ -937,8 +982,10 @@ img {
     }
 
     .social-links,
-    .newsletter-form {
+    .newsletter-form,
+    .partner-logos {
         justify-content: center;
+        gap: 20px;
     }
 
     .search-bar {
@@ -980,31 +1027,32 @@ img {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .hero-content h1 {
-        font-size: 32px;
+        font-size: 30px;
+    }
+
+    .benefits-list {
+        grid-template-columns: 1fr;
+        /* Stack on very small screens */
+    }
+
+    .partner-logos {
+        gap: 20px;
+    }
+
+    .partner-svg {
+        height: 25px;
     }
 
     .subtitle {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .instructor-section {
-        padding: 40px 20px;
-    }
-
-    .badge {
-        padding: 8px 12px;
-    }
-
-    .badge-students {
-        right: -5px;
-    }
-
-    .badge-courses {
-        left: -5px;
+        padding: 40px 15px;
     }
 }
 
