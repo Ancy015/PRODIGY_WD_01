@@ -201,16 +201,32 @@ img {
     border-radius: 30px;
 }
 
-.badge {
+.badge-anim-wrapper {
     position: absolute;
+    z-index: 2;
+}
+
+.float-anim {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 1s;
+    /* Wait for hero-image fadeInUp to finish */
+}
+
+.float-anim-delayed {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.badge {
     background: var(--white);
     padding: 15px 20px;
-    border-radius: 20px;
-    box-shadow: var(--shadow-md);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     gap: 15px;
-    z-index: 5;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .badge-courses {
@@ -234,12 +250,14 @@ img {
 
 .badge-course-float {
     bottom: 50px;
-    left: -20px;
-    padding: 12px 15px;
+    left: -40px;
+    padding: 0;
     min-width: 200px;
-    display: flex;
+}
+
+.badge-course-float .badge {
     justify-content: space-between;
-    align-items: center;
+    padding: 12px 15px;
 }
 
 .float-card-header {
@@ -903,26 +921,24 @@ img {
         margin: 0 auto;
     }
 
-    /* Reposition badges for mobile to avoid overlap and clipping */
     .badge-courses {
-        top: -20px;
-        left: 0px;
-        padding: 10px 15px;
-        scale: 0.85;
+        top: -10px;
+        left: -10px;
+        scale: 0.75;
     }
 
     .badge-students {
-        top: 50%;
-        right: -10px;
-        scale: 0.85;
+        top: 40%;
+        right: -15px;
+        scale: 0.75;
     }
 
     .badge-course-float {
-        bottom: -30px;
+        bottom: -20px;
         left: 50%;
-        transform: translateX(-50%) !important;
-        scale: 0.85;
-        width: 90%;
+        transform: translateX(-50%);
+        scale: 0.8;
+        width: auto;
     }
 
     .benefits-grid,
@@ -1075,7 +1091,7 @@ img {
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 
     100% {
@@ -1089,14 +1105,6 @@ img {
 
 .hero-image {
     animation: fadeInUp 1s ease-out;
-}
-
-.badge {
-    animation: float 4s ease-in-out infinite;
-}
-
-.badge-students {
-    animation-delay: 1s;
 }
 
 /* Glassmorphism Refinement */
